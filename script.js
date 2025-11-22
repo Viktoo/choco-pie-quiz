@@ -232,7 +232,7 @@ const gameData = {
     "1": {
         "text": "You're in a glass-walled boardroom on the 47th floor in Seoul. Q4 earnings meeting. The CEO just dropped a bomb: market share is tanking. What's your first thought?",
         "choices": {
-            "This never would've happened in the 90s when we actually gave a shit": [2, ["Orion", "Mamut"]],
+            "This company's gone soft. We survived worse in the early days": [2, ["Orion", "Mamut"]],
             "Already composing the apology post in your head": [2, ["Lotte", "Gansito"]],
             "At least the view is incredible, very main character energy": [2, ["Dream Cake", "Cherry"]],
             "Guess I'm updating my LinkedIn tonight": [2, ["Smores", "Moon Pie"]]
@@ -252,7 +252,7 @@ const gameData = {
         "choices": {
             "Tell security to calm the hell down, you've got rights": [4, ["Mamut", "Vienna"]],
             "Try to comfort the intern, whisper 'it'll be okay'": [4, ["Gansito", "Smores"]],
-            "Stress-eat the entire bowl of honey butter chips on the table": [4, ["Moon Pie", "Cherry"]],
+            "Stress eat peanut M&Ms under the table": [4, ["Moon Pie", "Cherry"]],
             "Pull out your phone to document this before they take it": [4, ["Dream Cake", "Lotte"]]
         }
     },
@@ -328,8 +328,8 @@ const gameData = {
     "12": {
         "text": "She leads you underground. Like, DEEP underground. Concrete tunnel opens into... an illegal fight club? Cage in the center. Crowd going wild.",
         "choices": {
-            "In Vienna, we have culture. This is barbaric.": [13, ["Vienna", "Orion"]],
-            "The underground aesthetic is very 2025": [13, ["Dream Cake", "Cherry"]],
+            "This is absolutely medieval. Do they not have regulations here?": [13, ["Vienna", "Orion"]],
+            "Wait this is actually the coolest thing I've ever seen": [13, ["Dream Cake", "Cherry"]],
             "Is there food? When's the last time we ate?": [13, ["Moon Pie", "Gansito"]],
             "How do we get out of here?": [13, ["Smores", "Lotte"]]
         }
@@ -382,11 +382,11 @@ const gameData = {
     "18": {
         "text": "You're in a taxi at 5am. Sun's coming up over Han River. Driver asks: 'Rough night?' You think about everything. One word to describe it:",
         "choices": {
-            "'Old-school' or 'Respect'": [0, ["Orion", "Vienna"]],
-            "'Iconic' or 'Unreal'": [0, ["Dream Cake", "Cherry"]],
-            "'Bonding' or 'Intense'": [0, ["Gansito", "Smores"]],
-            "'Insane' or 'Hungry'": [0, ["Moon Pie", "Mamut"]],
-            "'Validating' or 'F*cking crazy'": [0, ["Lotte"]]
+            "Unforgettable": [0, ["Orion", "Vienna"]],
+            "Iconic": [0, ["Dream Cake", "Cherry"]],
+            "Intense": [0, ["Gansito", "Smores"]],
+            "Insane": [0, ["Moon Pie", "Mamut"]],
+            "Overwhelming": [0, ["Lotte"]]
         }
     }
 };
