@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #8B4513;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homescreen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D2691E;
+}
+
+.title-container {
+    text-align: center;
+    background: #FFDAB9;
+    padding: 60px 80px;
+    border: 4px solid #000000;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.start-button {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    padding: 20px 60px;
+    background: #8B4513;
+    color: #FFFFFF;
+    border: 4px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+
+.start-button:hover {
+    background: #654321;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 800px;
+    background: #FFDAB9;
+    padding: 40px;
+    border: 4px solid #000000;
+}
+
+#story-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    min-height: 100px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.choice-button {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    padding: 20px 30px;
+    background: #CD853F;
+    color: #000000;
+    border: 3px solid #000000;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s;
+    font-weight: normal;
+}
+
+.choice-button:hover {
+    background: #D2691E;
+}
+
+#result-container {
+    text-align: center;
+}
+
+#result-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#result-container .character-name {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 30px 0;
+    padding: 20px;
+    background: #FFE4B5;
+    border: 4px solid #000000;
+}
+
+#result-container .character-details {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 30px;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+}
+
+#result-container .character-details h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#result-container .character-details ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#result-container .share-button {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    padding: 15px 40px;
+    background: #8B4513;
+    color: #FFFFFF;
+    border: 3px solid #000000;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#result-container .share-button:hover {
+    background: #654321;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .title-container {
+        padding: 40px 50px;
+    }
+
+    .start-button {
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+
+    #game-container {
+        padding: 25px;
+    }
+
+    #story-text {
+        font-size: 18px;
+    }
+
+    .choice-button {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
