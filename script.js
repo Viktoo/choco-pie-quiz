@@ -505,6 +505,7 @@ function shareResult() {
             text: shareText,
             url: window.location.href
         }).catch(() => {
+            // User cancelled or share failed, silently try clipboard
             copyToClipboard(shareText);
         });
     } else {
@@ -513,10 +514,8 @@ function shareResult() {
 }
 
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        alert('Link copied to clipboard!');
-    }).catch(() => {
-        alert('Please copy the link manually: ' + window.location.href);
+    navigator.clipboard.writeText(text).catch(() => {
+        // Fail silently
     });
 }
 

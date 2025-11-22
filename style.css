@@ -163,7 +163,8 @@ body {
     }
 
     .title-container {
-        padding: 40px 50px;
+        padding: 40px 30px;
+        margin: 0 20px;
     }
 
     .start-button {
