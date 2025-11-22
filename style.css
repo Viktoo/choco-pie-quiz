@@ -111,6 +111,15 @@ body {
     border: 4px solid #000000;
 }
 
+#result-container .character-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border: 4px solid #000000;
+}
+
 #result-container .character-details {
     text-align: left;
     font-size: 16px;
@@ -173,5 +182,29 @@ body {
     .choice-button {
         font-size: 16px;
         padding: 15px 20px;
+    }
+
+    #result-container h2 {
+        font-size: 28px;
+    }
+
+    #result-container .character-name {
+        font-size: 32px;
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    #result-container .character-image {
+        margin: 20px auto;
+        max-width: 100%;
+    }
+
+    #result-container .character-details {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    #result-container .character-details h3 {
+        font-size: 20px;
     }
 }

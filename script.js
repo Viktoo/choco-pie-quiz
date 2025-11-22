@@ -2,6 +2,7 @@
 const characterData = {
     "Orion": {
         name: "ORION CHOCO PIE",
+        image: "images/orion.png",
         strengths: [
             "Been there, done that, got the wrapper to prove it",
             "Commands respect without even trying, natural authority vibes",
@@ -26,6 +27,7 @@ const characterData = {
     },
     "Lotte": {
         name: "LOTTE CHOCO PIE",
+        image: "images/lotte.png",
         strengths: [
             "Works twice as hard to prove themselves constantly",
             "Actually really talented but never gets credit for it",
@@ -50,6 +52,7 @@ const characterData = {
     },
     "Dream Cake": {
         name: "DREAM CAKE",
+        image: "images/dream-cake.png",
         strengths: [
             "Impeccable taste and aesthetic in literally everything",
             "Networked with everyone who matters, ultimate connector",
@@ -74,6 +77,7 @@ const characterData = {
     },
     "Smores": {
         name: "SMORES",
+        image: "images/smores.png",
         strengths: [
             "Reliable as gravity, you can count on them always",
             "No drama, no fuss, just gets things done quietly",
@@ -98,6 +102,7 @@ const characterData = {
     },
     "Moon Pie": {
         name: "MOON PIE",
+        image: "images/moon-pie.png",
         strengths: [
             "Unapologetically themselves, zero shame about anything ever",
             "Knows every diner, food truck, and buffet within 50 miles",
@@ -122,6 +127,7 @@ const characterData = {
     },
     "Mamut": {
         name: "MAMUT",
+        image: "images/mamut.png",
         strengths: [
             "Will absolutely throw hands for their friends no questions asked",
             "Intimidating presence that solves problems before they start",
@@ -146,6 +152,7 @@ const characterData = {
     },
     "Gansito": {
         name: "GANSITO",
+        image: "images/gansito.png",
         strengths: [
             "Radiates warmth and kindness like a portable sun",
             "Remembers small details about people that make them feel seen",
@@ -170,6 +177,7 @@ const characterData = {
     },
     "Cherry": {
         name: "CHOCOPIE CHERRY",
+        image: "images/cherry.png",
         strengths: [
             "Always knows the tea before it even starts brewing",
             "Impeccable fashion sense that sets trends others follow",
@@ -194,6 +202,7 @@ const characterData = {
     },
     "Vienna": {
         name: "CHOCOPIE VIENNA CAKE",
+        image: "images/vienna.png",
         strengths: [
             "Sophisticated taste and cultural knowledge that's actually impressive",
             "High standards that push others to improve themselves",
@@ -221,163 +230,163 @@ const characterData = {
 // Game data structure
 const gameData = {
     "1": {
-        "text": "You're at the Annual Choco Pie Convention in Snackville! It's the biggest event of the year. What are you most excited about?",
+        "text": "You're in a glass-walled boardroom on the 47th floor in Seoul. Q4 earnings meeting. The CEO just dropped a bomb: market share is tanking. What's your first thought?",
         "choices": {
-            "Meeting industry legends and learning from the originals": [2, ["Orion", "Vienna"]],
-            "Networking and making connections with everyone": [2, ["Dream Cake", "Cherry"]],
-            "The free snack buffet (obviously)": [2, ["Moon Pie", "Gansito"]],
-            "Just happy to be here with friends": [2, ["Smores", "Lotte"]]
+            "This never would've happened in the 90s when we actually gave a shit": [2, ["Orion", "Mamut"]],
+            "Already composing the apology post in your head": [2, ["Lotte", "Gansito"]],
+            "At least the view is incredible, very main character energy": [2, ["Dream Cake", "Cherry"]],
+            "Guess I'm updating my LinkedIn tonight": [2, ["Smores", "Moon Pie"]]
         }
     },
     "2": {
-        "text": "During the keynote speech, someone in the audience shouts a rude comment at the speaker. What's your reaction?",
+        "text": "The marketing VP suddenly stands up, slams the table: 'Someone's been leaking our strategy to Lotte.' Dead silence. Everyone's looking around.",
         "choices": {
-            "Stand up and tell them to shut up": [3, ["Mamut", "Orion"]],
-            "Whisper to friends about the drama": [3, ["Cherry", "Dream Cake"]],
-            "Feel uncomfortable but stay quiet": [3, ["Gansito", "Smores"]],
-            "Try to validate both perspectives": [3, ["Lotte", "Vienna"]]
+            "Stand up. 'Who the f*ck would do that?'": [3, ["Mamut", "Orion"]],
+            "Lean over to whisper 'Oh SHIT this is insane' to whoever's next to you": [3, ["Cherry", "Dream Cake"]],
+            "Sink into your chair, hoping nobody looks at you": [3, ["Gansito", "Lotte"]],
+            "Stay neutral, observe who's sweating": [3, ["Smores", "Vienna"]]
         }
     },
     "3": {
-        "text": "Suddenly, the convention center goes dark! A massive hand crashes through the ceiling and scoops everyone up!",
+        "text": "Security bursts in. 'Nobody leaves.' They start checking phones. The intern next to you is literally shaking. Do you...",
         "choices": {
-            "Continue": [4, []]
+            "Tell security to calm the hell down, you've got rights": [4, ["Mamut", "Vienna"]],
+            "Try to comfort the intern, whisper 'it'll be okay'": [4, ["Gansito", "Smores"]],
+            "Stress-eat the entire bowl of honey butter chips on the table": [4, ["Moon Pie", "Cherry"]],
+            "Pull out your phone to document this before they take it": [4, ["Dream Cake", "Lotte"]]
         }
     },
     "4": {
-        "text": "When you wake up, you're trapped in a human's kitchen pantry with your fellow choco pies! What's your first move?",
+        "text": "BANG. The lights cut. Emergency exit signs glow red. Someone screams. You hear glass shatter. What the actual f*ck is happening?",
         "choices": {
-            "Take charge and organize an escape plan": [5, ["Orion", "Mamut", "Vienna"]],
-            "Look for the most aesthetic exit route": [5, ["Dream Cake", "Cherry"]],
-            "Check if everyone is okay first": [5, ["Gansito", "Smores"]],
-            "Panic a little but try to help": [5, ["Lotte", "Moon Pie"]]
+            "Continue": [5, []]
         }
     },
     "5": {
-        "text": "You spot three possible escape routes: a window, an air vent, and a small gap under the door. Which do you suggest?",
+        "text": "Emergency lights flicker on. The window's smashed. CEO is gone. Like, GONE gone. Blood on the glass. You need to move. NOW.",
         "choices": {
-            "The window - classic and proven method": [6, ["Orion", "Smores"]],
-            "The air vent - adventurous and exciting": [7, ["Mamut", "Cherry"]],
-            "The door gap - safest option": [8, ["Vienna", "Gansito"]],
-            "Let's vote on it democratically": [9, ["Lotte", "Dream Cake"]]
+            "Take charge: 'Everyone stay calm, we go together'": [6, ["Orion", "Mamut", "Vienna"]],
+            "Grab your designer bag first, THEN panic": [6, ["Dream Cake", "Cherry"]],
+            "Check if anyone's hurt before anything else": [6, ["Gansito", "Smores"]],
+            "Start crying but also following everyone else": [6, ["Lotte", "Moon Pie"]]
         }
     },
     "6": {
-        "text": "You choose the window route. It's stuck! How do you handle this setback?",
+        "text": "You're in the emergency stairwell. 47 floors down. Someone suggests splitting up - elevator shaft, stairs, or the sketchy service corridor?",
         "choices": {
-            "\"In my day, windows actually opened properly\"": [10, ["Orion", "Vienna"]],
-            "Try harder! Push with all your might": [10, ["Mamut", "Lotte"]],
-            "Look for oil or something to loosen it": [10, ["Smores", "Gansito"]],
-            "Take a snack break to think": [10, ["Moon Pie", "Dream Cake"]]
+            "Stairs. Old school. Reliable. The way it's been done since forever.": [7, ["Orion", "Smores"]],
+            "Elevator shaft - we can rappel down like in the movies": [8, ["Mamut", "Cherry"]],
+            "Service corridor seems... safer? Maybe?": [9, ["Vienna", "Gansito"]],
+            "Can we just... vote? Please?": [10, ["Lotte", "Dream Cake"]]
         }
     },
     "7": {
-        "text": "The air vent is dark and spooky. As you crawl through, you hear strange noises.",
+        "text": "Fifteen floors down, your legs are screaming. Someone's having a breakdown. The stairwell door at floor 32 is slightly open, voices inside.",
         "choices": {
-            "Keep going, fear is for the weak": [10, ["Mamut", "Orion"]],
-            "Make jokes to lighten the mood": [10, ["Cherry", "Moon Pie"]],
-            "Stay close to friends for comfort": [10, ["Gansito", "Smores"]],
-            "Document this for your story later": [10, ["Dream Cake", "Lotte"]]
+            "Keep going, don't engage with random shit": [11, ["Orion", "Vienna"]],
+            "Push through the pain, we've survived worse": [11, ["Mamut", "Lotte"]],
+            "We need a break anyway, maybe they can help": [11, ["Smores", "Gansito"]],
+            "Honestly need to sit down and eat something": [11, ["Moon Pie", "Dream Cake"]]
         }
     },
     "8": {
-        "text": "Squeezing under the door, you emerge into a fancy dining room with a dinner party happening!",
+        "text": "Elevator shaft is dark as hell. You're climbing down maintenance cables. Someone's livestreaming this on their phone. Seriously?",
         "choices": {
-            "Observe the proper etiquette and cross carefully": [10, ["Vienna", "Orion"]],
-            "This is so aesthetic! What a vibe": [10, ["Dream Cake", "Cherry"]],
-            "Apologize profusely as you scurry past": [10, ["Gansito", "Lotte"]],
-            "Just blend in and act natural": [10, ["Smores", "Moon Pie"]]
+            "Keep climbing, fear is a choice": [11, ["Mamut", "Orion"]],
+            "Make jokes about how you're definitely dying": [11, ["Cherry", "Moon Pie"]],
+            "Stay close to the group, safety in numbers": [11, ["Gansito", "Smores"]],
+            "Ask them to angle the camera better, your good side": [11, ["Dream Cake", "Lotte"]]
         }
     },
     "9": {
-        "text": "During the vote, two friends start arguing about which route is best. What do you do?",
+        "text": "Service corridor smells like kimchi and industrial cleaner. Fluorescent lights buzz. You emerge into... a luxury penthouse? What?",
         "choices": {
-            "Side with whoever sounds more experienced": [10, ["Orion", "Vienna"]],
-            "Try to mediate and find compromise": [10, ["Gansito", "Smores"]],
-            "This drama is everything right now": [10, ["Cherry", "Dream Cake"]],
-            "Suggest we just try all three": [10, ["Moon Pie", "Mamut"]]
+            "This is highly unusual and improper": [11, ["Vienna", "Orion"]],
+            "The AESTHETIC. Are those original Eames chairs?": [11, ["Dream Cake", "Cherry"]],
+            "Sorry sorry sorry for intruding": [11, ["Gansito", "Lotte"]],
+            "Act natural. We belong here. Confidence is key.": [11, ["Smores", "Moon Pie"]]
         }
     },
     "10": {
-        "text": "You've escaped the house! But now you're in an unfamiliar neighborhood. A friendly Croissant approaches offering help.",
+        "text": "Mid-vote, two people start screaming at each other about which route. It's getting physical. Someone might actually throw hands.",
         "choices": {
-            "\"I don't trust them, something's off\"": [11, ["Mamut", "Vienna"]],
-            "Accept help graciously and thank them": [11, ["Gansito", "Smores"]],
-            "Accept but keep your guard up": [11, ["Orion", "Lotte"]],
-            "\"Omg are they single?\"": [11, ["Cherry", "Dream Cake"]]
+            "Side with whoever's been here longer, they know better": [11, ["Orion", "Vienna"]],
+            "Jump between them, try to mediate": [11, ["Gansito", "Smores"]],
+            "This is honestly great content": [11, ["Cherry", "Dream Cake"]],
+            "Suggest we take all three routes? Please stop yelling?": [11, ["Moon Pie", "Mamut"]]
         }
     },
     "11": {
-        "text": "The Croissant leads you to the mystical realm of Candy Kingdom! Everything is made of sweets. First impression?",
+        "text": "Ground level. You burst out into Gangnam at 2am. Neon everywhere. A woman in Chanel approaches. 'You're bleeding. Follow me.' Sketchy or savior?",
         "choices": {
-            "Impressive architecture, but where I'm from we do it better": [12, ["Vienna", "Orion"]],
-            "THIS IS SO INSTAGRAMMABLE": [12, ["Dream Cake", "Cherry"]],
-            "Is it okay if we eat some of this?": [12, ["Moon Pie", "Gansito"]],
-            "Practical question: how do we get home?": [12, ["Smores", "Lotte"]]
+            "Hell no. Trust nobody.": [12, ["Mamut", "Vienna"]],
+            "Thank her profusely, accept help": [12, ["Gansito", "Smores"]],
+            "Cautious but desperate, follow at a distance": [12, ["Orion", "Lotte"]],
+            "Is that the limited edition Chanel?": [12, ["Cherry", "Dream Cake"]]
         }
     },
     "12": {
-        "text": "A Sugar Crystal Guard stops you. \"State your business in Candy Kingdom!\" they demand.",
+        "text": "She leads you underground. Like, DEEP underground. Concrete tunnel opens into... an illegal fight club? Cage in the center. Crowd going wild.",
         "choices": {
-            "\"We demand safe passage, we're lost travelers\"": [13, ["Orion", "Mamut"]],
-            "Explain politely and apologize for intrusion": [13, ["Gansito", "Smores"]],
-            "Compliment their uniform and try to charm them": [13, ["Dream Cake", "Cherry"]],
-            "\"We're actually really important back home\"": [13, ["Lotte", "Vienna"]]
+            "In Vienna, we have culture. This is barbaric.": [13, ["Vienna", "Orion"]],
+            "The underground aesthetic is very 2025": [13, ["Dream Cake", "Cherry"]],
+            "Is there food? When's the last time we ate?": [13, ["Moon Pie", "Gansito"]],
+            "How do we get out of here?": [13, ["Smores", "Lotte"]]
         }
     },
     "13": {
-        "text": "The guard says you must entertain the Candy King to earn passage home. What's your talent?",
+        "text": "The crowd parts. In the cage: your CEO. Alive. Fighting. He sees you. 'Get in here. You want answers? Earn them.' He's serious.",
         "choices": {
-            "Tell stories from the old days": [14, ["Orion", "Vienna"]],
-            "Perform an elaborate dance number": [14, ["Cherry", "Dream Cake"]],
-            "Make everyone laugh with humble self-deprecating humor": [14, ["Lotte", "Gansito"]],
-            "Show off your impressive eating skills": [14, ["Moon Pie", "Mamut"]]
+            "F*ck it. Let's go. *cracks knuckles*": [14, ["Orion", "Mamut"]],
+            "Beg someone else to go instead": [14, ["Gansito", "Smores"]],
+            "Negotiate: 'What do I get if I win?'": [14, ["Dream Cake", "Vienna"]],
+            "Panic. Visible panic. Laugh nervously.": [14, ["Lotte", "Cherry"]]
         }
     },
     "14": {
-        "text": "The Candy King is amused! \"You may ask for one thing before you leave,\" he says.",
+        "text": "You're in the cage. CEO is across from you. Bell rings. He charges. You've got 3 seconds. What's your move?",
         "choices": {
-            "Ask for wisdom and knowledge": [15, ["Orion", "Vienna"]],
-            "Ask for supplies to help the whole group": [15, ["Gansito", "Smores"]],
-            "Ask for something cool for the aesthetic": [15, ["Dream Cake", "Cherry"]],
-            "Ask for snacks for the journey": [15, ["Moon Pie", "Lotte"]]
+            "Duck and counter - technique over brute force": [15, ["Vienna", "Smores"]],
+            "Meet him head on, full aggression": [15, ["Mamut", "Orion"]],
+            "Dodge, talk it out: 'We can discuss this!'": [15, ["Gansito", "Lotte"]],
+            "Trip, fall, accidentally headbutt him": [15, ["Moon Pie", "Cherry"]]
         }
     },
     "15": {
-        "text": "On the journey home, your group is tired and morale is low. What do you do?",
+        "text": "You're on the ground. He's standing over you. Then - he laughs. Helps you up. 'You passed. Now we talk.' This was a test? Are you f*cking kidding?",
         "choices": {
-            "Give a motivational speech about the old days": [16, ["Orion", "Mamut"]],
-            "Offer encouraging words and check on everyone": [16, ["Gansito", "Smores"]],
-            "Turn it into a fun game or challenge": [16, ["Cherry", "Dream Cake"]],
-            "\"Are we there yet? I need food\"": [16, ["Moon Pie", "Lotte"]]
+            "'This was always a test. I knew it.'": [16, ["Orion", "Vienna"]],
+            "'Oh thank GOD I thought I was gonna die'": [16, ["Gansito", "Smores"]],
+            "'Did someone film that? I need that footage'": [16, ["Dream Cake", "Cherry"]],
+            "'Can we PLEASE eat now?'": [16, ["Moon Pie", "Lotte"]]
         }
     },
     "16": {
-        "text": "You finally see Snackville in the distance! One last obstacle: a rickety bridge over a chocolate river.",
+        "text": "Private room upstairs. CEO explains: the 'leak' was planned. The window break? Staged. This whole night? Corporate team building. EXTREME team building.",
         "choices": {
-            "\"Back in my day, bridges were actually sturdy\"": [17, ["Orion", "Vienna"]],
-            "Test it carefully and proceed methodically": [17, ["Smores", "Lotte"]],
-            "YOLO let's run across!": [17, ["Mamut", "Cherry"]],
-            "Make sure everyone crosses safely, go last": [17, ["Gansito", "Dream Cake"]]
+            "You've got to be sh*tting me": [17, ["Mamut", "Moon Pie"]],
+            "Well that was... innovative? I guess?": [17, ["Smores", "Lotte"]],
+            "This is insane even by Korean corporate standards": [17, ["Vienna", "Orion"]],
+            "This would look AMAZING in my memoir": [17, ["Dream Cake", "Cherry"]]
         }
     },
     "17": {
-        "text": "You've made it back to Snackville! The whole town celebrates your return. How do you celebrate?",
+        "text": "CEO: 'Those who made it here get promoted. Tomorrow, 9am sharp. Don't be late.' Everyone's processing. How do you react?",
         "choices": {
-            "Share stories and lessons from the journey": [18, ["Orion", "Vienna"]],
-            "Throw a huge party for everyone": [18, ["Cherry", "Dream Cake"]],
-            "Quiet celebration with close friends": [18, ["Smores", "Gansito"]],
-            "Hit up every restaurant in town": [18, ["Moon Pie", "Mamut"]]
+            "Nod. Respect the old-school loyalty test.": [18, ["Orion", "Vienna"]],
+            "Cry from relief and stress and confusion": [18, ["Gansito", "Lotte"]],
+            "Immediately post a cryptic story about 'crazy night'": [18, ["Cherry", "Dream Cake"]],
+            "Ask where the after-party food is": [18, ["Moon Pie", "Mamut"]]
         }
     },
     "18": {
-        "text": "Final question: Someone asks you to describe the adventure in one word. What do you say?",
+        "text": "You're in a taxi at 5am. Sun's coming up over Han River. Driver asks: 'Rough night?' You think about everything. One word to describe it:",
         "choices": {
-            "\"Educational\" or \"Nostalgic\"": [0, ["Orion", "Vienna"]],
-            "\"Aesthetic\" or \"Iconic\"": [0, ["Dream Cake", "Cherry"]],
-            "\"Meaningful\" or \"Together\"": [0, ["Gansito", "Smores"]],
-            "\"Delicious\" or \"Intense\"": [0, ["Moon Pie", "Mamut"]],
-            "\"Validating\" or \"Challenging\"": [0, ["Lotte"]]
+            "'Old-school' or 'Respect'": [0, ["Orion", "Vienna"]],
+            "'Iconic' or 'Unreal'": [0, ["Dream Cake", "Cherry"]],
+            "'Bonding' or 'Intense'": [0, ["Gansito", "Smores"]],
+            "'Insane' or 'Hungry'": [0, ["Moon Pie", "Mamut"]],
+            "'Validating' or 'F*cking crazy'": [0, ["Lotte"]]
         }
     }
 };
@@ -449,6 +458,8 @@ function revealCharacter() {
         <div id="result-container">
             <h2>You are...</h2>
             <div class="character-name">${character.name}</div>
+
+            <img src="${character.image}" alt="${character.name}" class="character-image">
 
             <div class="character-details">
                 <h3>Strengths:</h3>
